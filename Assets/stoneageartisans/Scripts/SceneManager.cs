@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class SceneManager : MonoBehaviour
@@ -16,7 +17,10 @@ public class SceneManager : MonoBehaviour
     public Text hitPointsValue;
     public Text toughnessValue;
     public Text actionValue;
-    public Text unspentPointsValue;
+    public Text statPointsValue;
+
+    public int skillPoints = 5;
+    public int statPoints = 15;
 
     Character character;
 
@@ -61,30 +65,32 @@ public class SceneManager : MonoBehaviour
 
     public void decreaseStat(string statName)
     {
-        int newValue = character.getStat(statName).getBaseValue() - 1;
+        Constants.StatType statType = (Constants.StatType) Enum.Parse(typeof(Constants.StatType), statName);
 
-        if(newValue >= character.getStat(statName).getMinimum())
+        int newValue = character.getStat(statType).getBaseValue() - 1;
+
+        if(newValue >= character.getStat(statType).getMinimum())
         {
-            character.getStat(statName).setBaseValue(newValue);
+            character.getStat(statType).setBaseValue(newValue);
             character.calculateDerivedStats();
-            character.setUnspentPoints(character.getUnspentPoints() + 1);
+            statPoints ++;
             updateUI();
         }
     }
 
     public void increaseStat(string statName)
     {
-        int points = character.getUnspentPoints();
-
-        if(points > 0)
+        if(statPoints > 0)
         {
-            int newValue = character.getStat(statName).getBaseValue() + 1;
+            Constants.StatType statType = (Constants.StatType) Enum.Parse(typeof(Constants.StatType), statName);
 
-            if(newValue <= character.getStat(statName).getMaximum())
+            int newValue = character.getStat(statType).getBaseValue() + 1;
+
+            if(newValue <= character.getStat(statType).getMaximum())
             {
-                character.getStat(statName).setBaseValue(newValue);
+                character.getStat(statType).setBaseValue(newValue);
                 character.calculateDerivedStats();
-                character.setUnspentPoints(points - 1);
+                statPoints --;
                 updateUI();
             }
         }
@@ -98,15 +104,15 @@ public class SceneManager : MonoBehaviour
     void updateUI()
     {
         nameField.text = character.getName();
-        agilityValue.text = character.getStat("Agility").getBaseValue().ToString();
-        mightValue.text = character.getStat("Might").getBaseValue().ToString();
-        staminaValue.text = character.getStat("Stamina").getBaseValue().ToString();
-        knowledgeValue.text = character.getStat("Knowledge").getBaseValue().ToString();
-        perceptionValue.text = character.getStat("Perception").getBaseValue().ToString();
-        willpowerValue.text = character.getStat("Willpower").getBaseValue().ToString();
+        agilityValue.text = character.getStat(Constants.StatType.Agility).getBaseValue().ToString();
+        mightValue.text = character.getStat(Constants.StatType.Might).getBaseValue().ToString();
+        staminaValue.text = character.getStat(Constants.StatType.Stamina).getBaseValue().ToString();
+        knowledgeValue.text = character.getStat(Constants.StatType.Knowledge).getBaseValue().ToString();
+        perceptionValue.text = character.getStat(Constants.StatType.Perception).getBaseValue().ToString();
+        willpowerValue.text = character.getStat(Constants.StatType.Willpower).getBaseValue().ToString();
         hitPointsValue.text = character.getHitPoints().ToString();
         toughnessValue.text = character.getToughness().ToString();
         actionValue.text = character.getAction().ToString();
-        unspentPointsValue.text = character.getUnspentPoints().ToString();
+        statPointsValue.text = statPoints.ToString();
     }
 }

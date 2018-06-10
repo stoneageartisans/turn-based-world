@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using System;
-using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
 
 public class Character
 {
@@ -22,20 +21,23 @@ public class Character
     private int baseDefense;
     private int toughness;
 
+    private HashSet<Skill> skills;
+
     public Character()
     {
         name = "";
 
-        agility = new PrimaryStat("Agility", 10, 0, 20);
-        might = new PrimaryStat("Might", 10, 0, 20);
-        stamina = new PrimaryStat("Stamina", 10, 0, 20);
-        knowledge = new PrimaryStat("Knowledge", 10, 0, 20);
-        perception = new PrimaryStat("Perception", 10, 0, 20);
-        willpower = new PrimaryStat("Willpower", 10, 0, 20);
+        agility = new PrimaryStat(Constants.StatType.Agility, 10, 0, 20);
+        might = new PrimaryStat(Constants.StatType.Might, 10, 0, 20);
+        stamina = new PrimaryStat(Constants.StatType.Stamina, 10, 0, 20);
+        knowledge = new PrimaryStat(Constants.StatType.Knowledge, 10, 0, 20);
+        perception = new PrimaryStat(Constants.StatType.Perception, 10, 0, 20);
+        willpower = new PrimaryStat(Constants.StatType.Willpower, 10, 0, 20);
 
-        unspentPoints = 15;
+        unspentPoints = 0;
 
         calculateDerivedStats();
+        initializeSkills();
     }
 
     public void calculateDerivedStats()
@@ -78,24 +80,75 @@ public class Character
         return offensePoints;
     }
 
-    public PrimaryStat getStat(string statName)
+    public Skill getSkill(string skillName)
     {
-        switch(statName.ToLower())
+        Skill skill = null;
+
+        foreach(Skill _skill in skills)
         {
-            case "agility":
+            if(_skill.getName().Equals(skillName))
+            {
+                skill = _skill;
+                break;
+            }
+        }
+
+        return skill;
+    }
+
+    public int getSkillRating(string skillName)
+    {
+        Skill skill = getSkill(skillName);
+
+        int statTotal = 0;
+        
+        foreach(Constants.StatType statType in skill.getStats())
+        {
+            switch(statType)
+            {
+                case Constants.StatType.Agility:
+                    statTotal += agility.getCurrentValue();
+                    break;
+                case Constants.StatType.Might:
+                    statTotal += might.getCurrentValue();
+                    break;
+                case Constants.StatType.Stamina:
+                    statTotal += stamina.getCurrentValue();
+                    break;
+                case Constants.StatType.Knowledge:
+                    statTotal += knowledge.getCurrentValue();
+                    break;
+                case Constants.StatType.Perception:
+                    statTotal += perception.getCurrentValue();
+                    break;
+                case Constants.StatType.Willpower:
+                    statTotal += willpower.getCurrentValue();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        return ((int) Math.Round(((float) statTotal / 3.0f), 0, MidpointRounding.AwayFromZero) + skill.getPoints());
+    }
+
+    public PrimaryStat getStat(Constants.StatType statType)
+    {
+        switch(statType)
+        {
+            case Constants.StatType.Agility:
                 return agility;
-            case "might":
+            case Constants.StatType.Might:
                 return might;
-            case "stamina":
+            case Constants.StatType.Stamina:
                 return stamina;
-            case "knowledge":
+            case Constants.StatType.Knowledge:
                 return knowledge;
-            case "perception":
+            case Constants.StatType.Perception:
                 return perception;
-            case "willpower":
+            case Constants.StatType.Willpower:
                 return willpower;
             default:
-                Debug.Log("ERROR: There is no primary stat named '" + statName + "'");
                 return null;
         }
     }
@@ -108,6 +161,25 @@ public class Character
     public int getUnspentPoints()
     {
         return unspentPoints;
+    }
+
+    private void initializeSkills()
+    {
+        skills = new HashSet<Skill>();
+
+        skills.Add(new Skill("Arcane", Constants.StatType.Knowledge, Constants.StatType.Knowledge, Constants.StatType.Knowledge));
+        skills.Add(new Skill("Athletics", Constants.StatType.Agility, Constants.StatType.Might, Constants.StatType.Stamina));
+        skills.Add(new Skill("Bartering", Constants.StatType.Knowledge, Constants.StatType.Perception, Constants.StatType.Willpower));
+        skills.Add(new Skill("Healing", Constants.StatType.Knowledge, Constants.StatType.Knowledge, Constants.StatType.Perception));
+        skills.Add(new Skill("Lockpicking", Constants.StatType.Agility, Constants.StatType.Knowledge, Constants.StatType.Perception));
+        skills.Add(new Skill("Melee", Constants.StatType.Agility, Constants.StatType.Agility, Constants.StatType.Stamina));
+        skills.Add(new Skill("Pickpocket", Constants.StatType.Agility, Constants.StatType.Agility, Constants.StatType.Perception));
+        skills.Add(new Skill("Projectiles", Constants.StatType.Agility, Constants.StatType.Agility, Constants.StatType.Perception));
+        skills.Add(new Skill("Riding", Constants.StatType.Agility, Constants.StatType.Perception, Constants.StatType.Stamina));
+        skills.Add(new Skill("Shield", Constants.StatType.Agility, Constants.StatType.Might, Constants.StatType.Stamina));
+        skills.Add(new Skill("Stealth", Constants.StatType.Agility, Constants.StatType.Perception, Constants.StatType.Stamina));
+        skills.Add(new Skill("Survival", Constants.StatType.Knowledge, Constants.StatType.Perception, Constants.StatType.Stamina));
+        skills.Add(new Skill("Traps", Constants.StatType.Agility, Constants.StatType.Knowledge, Constants.StatType.Perception));
     }
 
     public void setName(string newName)

@@ -1,14 +1,14 @@
 ﻿public class PrimaryStat
 {
-    private string name;
+    private Constants.StatType type;
     private int baseValue;
     private int minimum;
     private int maximum;
     private int modifier;
 
-    public PrimaryStat(string _name, int _baseValue, int _minimum, int _maximum)
+    public PrimaryStat(Constants.StatType _type, int _baseValue, int _minimum, int _maximum)
     {
-        name = _name;
+        type = _type;
         baseValue = _baseValue;
         minimum = _minimum;
         maximum = _maximum;
@@ -47,8 +47,13 @@
 
     public string getName()
     {
-        return name;
-    }    
+        return type.ToString();
+    }
+    
+    public Constants.StatType getType()
+    {
+        return type;
+    }  
 
     public void setBaseValue(int newValue)
     {
