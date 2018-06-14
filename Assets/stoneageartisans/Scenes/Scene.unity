@@ -501,6 +501,36 @@ Prefab:
       propertyPath: m_Name
       value: Button - Decrease Stealth
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Stealth
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Stealth
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -509,6 +539,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 249472699}
+--- !u!114 &249472701 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 249472699}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &306086418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,6 +1168,20 @@ MonoBehaviour:
   toughnessValue: {fileID: 1891456412}
   actionValue: {fileID: 507556372}
   statPointsValue: {fileID: 1536201319}
+  arcaneValue: {fileID: 1901000229}
+  athleticsValue: {fileID: 1418577355}
+  barteringValue: {fileID: 1152943971}
+  healingValue: {fileID: 1343062584}
+  lockpickingValue: {fileID: 1746557117}
+  meleeValue: {fileID: 625171360}
+  pickpocketValue: {fileID: 1669060241}
+  projectilesValue: {fileID: 1472629924}
+  ridingValue: {fileID: 696458434}
+  shieldValue: {fileID: 1515528380}
+  stealthValue: {fileID: 249472701}
+  survivalValue: {fileID: 1509891097}
+  trapsValue: {fileID: 1388293545}
+  skillPointsValue: {fileID: 810107106}
   skillPoints: 5
   statPoints: 15
 --- !u!1001 &507556370
@@ -1680,6 +1730,36 @@ Prefab:
       propertyPath: m_Name
       value: Button - Decrease Melee
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Melee
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Melee
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -1688,6 +1768,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 625171358}
+--- !u!114 &625171360 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 625171358}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &629118925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,6 +1971,36 @@ Prefab:
       propertyPath: m_Name
       value: Button - Decrease Riding
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Riding
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Riding
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -1893,6 +2009,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 696458432}
+--- !u!114 &696458434 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 696458432}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &810107105
 Prefab:
   m_ObjectHideFlags: 0
@@ -2006,6 +2128,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2dd0507c56226e4b820e9252d9c7b08, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &810107106 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114871958356602666, guid: e2dd0507c56226e4b820e9252d9c7b08,
+    type: 2}
+  m_PrefabInternal: {fileID: 810107105}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &859894293
 Prefab:
   m_ObjectHideFlags: 0
@@ -2796,6 +2924,36 @@ Prefab:
       propertyPath: m_Name
       value: Button - Decrease Bartering
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Bartering
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Bartering
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -2804,6 +2962,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 1152943969}
+--- !u!114 &1152943971 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 1152943969}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1155980023
 Prefab:
   m_ObjectHideFlags: 0
@@ -3046,6 +3210,36 @@ Prefab:
       propertyPath: m_Name
       value: Button - Decrease Healing
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Healing
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -3054,6 +3248,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 1343062582}
+--- !u!114 &1343062584 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 1343062582}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1344468085
 GameObject:
   m_ObjectHideFlags: 0
@@ -3288,6 +3488,36 @@ Prefab:
       propertyPath: m_Name
       value: Button - Decrease Traps
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Traps
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Traps
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -3296,6 +3526,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 1388293543}
+--- !u!114 &1388293545 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 1388293543}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1418577353
 Prefab:
   m_ObjectHideFlags: 0
@@ -3414,6 +3650,36 @@ Prefab:
       propertyPath: m_Text
       value: 'Athletics:'
       objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Athletics
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Athletics
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -3422,6 +3688,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 1418577353}
+--- !u!114 &1418577355 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 1418577353}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1472629922
 Prefab:
   m_ObjectHideFlags: 0
@@ -3540,6 +3812,36 @@ Prefab:
       propertyPath: m_Name
       value: Button - Decrease Projectiles
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Projectiles
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Projectiles
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -3548,6 +3850,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 1472629922}
+--- !u!114 &1472629924 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 1472629922}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!114 &1500796766 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114755096624743818, guid: a2e59a939e725434189a1e10f3871f21,
@@ -3672,6 +3980,36 @@ Prefab:
       propertyPath: m_Name
       value: Button - Decrease Survival
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Survival
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Survival
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -3680,6 +4018,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 1509891095}
+--- !u!114 &1509891097 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 1509891095}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1515528378
 Prefab:
   m_ObjectHideFlags: 0
@@ -3798,6 +4142,36 @@ Prefab:
       propertyPath: m_Name
       value: Button - Decrease Shield
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Shield
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Shield
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -3806,6 +4180,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 1515528378}
+--- !u!114 &1515528380 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 1515528378}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1536201317
 Prefab:
   m_ObjectHideFlags: 0
@@ -4314,6 +4694,36 @@ Prefab:
       propertyPath: m_Text
       value: 'Pickpocket:'
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Pickpocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Pickpocket
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -4322,6 +4732,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 1669060239}
+--- !u!114 &1669060241 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 1669060239}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1746557115
 Prefab:
   m_ObjectHideFlags: 0
@@ -4440,6 +4856,36 @@ Prefab:
       propertyPath: m_Name
       value: Button - Decrease Lockpicking
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Lockpicking
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Lockpicking
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -4448,6 +4894,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 1746557115}
+--- !u!114 &1746557117 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 1746557115}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1774755221
 GameObject:
   m_ObjectHideFlags: 0
@@ -4851,6 +5303,36 @@ Prefab:
       propertyPath: m_Text
       value: 'Arcane:'
       objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: increaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651373650582558, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Arcane
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 502121837}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: decreaseSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 114954305595623022, guid: 95b043ed3324d224db43052e1b6a7057,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Arcane
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95b043ed3324d224db43052e1b6a7057, type: 2}
   m_IsPrefabParent: 0
@@ -4859,6 +5341,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224071968490086876, guid: 95b043ed3324d224db43052e1b6a7057,
     type: 2}
   m_PrefabInternal: {fileID: 1901000227}
+--- !u!114 &1901000229 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431542729605820, guid: 95b043ed3324d224db43052e1b6a7057,
+    type: 2}
+  m_PrefabInternal: {fileID: 1901000227}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1937294416
 Prefab:
   m_ObjectHideFlags: 0

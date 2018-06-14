@@ -19,6 +19,21 @@ public class SceneManager : MonoBehaviour
     public Text actionValue;
     public Text statPointsValue;
 
+    public Text arcaneValue;
+    public Text athleticsValue;
+    public Text barteringValue;
+    public Text healingValue;
+    public Text lockpickingValue;
+    public Text meleeValue;
+    public Text pickpocketValue;
+    public Text projectilesValue;
+    public Text ridingValue;
+    public Text shieldValue;
+    public Text stealthValue;
+    public Text survivalValue;
+    public Text trapsValue;
+    public Text skillPointsValue;
+
     public int skillPoints = 5;
     public int statPoints = 15;
 
@@ -63,6 +78,18 @@ public class SceneManager : MonoBehaviour
         }
     }
 
+    public void decreaseSkill(string skillName)
+    {
+        int newValue = character.getSkill(skillName).getPoints() - 1;
+
+        if(newValue >= 0)
+        {
+            character.getSkill(skillName).setPoints(newValue);
+            skillPoints ++;
+            updateUI();
+        }
+    }
+
     public void decreaseStat(string statName)
     {
         Constants.StatType statType = (Constants.StatType) Enum.Parse(typeof(Constants.StatType), statName);
@@ -74,6 +101,17 @@ public class SceneManager : MonoBehaviour
             character.getStat(statType).setBaseValue(newValue);
             character.calculateDerivedStats();
             statPoints ++;
+            updateUI();
+        }
+    }
+
+    public void increaseSkill(string skillName)
+    {
+        if(skillPoints > 0)
+        {
+            int newValue = character.getSkill(skillName).getPoints() + 1;
+            character.getSkill(skillName).setPoints(newValue);
+            skillPoints --;
             updateUI();
         }
     }
@@ -114,5 +152,20 @@ public class SceneManager : MonoBehaviour
         toughnessValue.text = character.getToughness().ToString();
         actionValue.text = character.getAction().ToString();
         statPointsValue.text = statPoints.ToString();
+
+        arcaneValue.text = character.getSkillRating("Arcane").ToString();
+        athleticsValue.text = character.getSkillRating("Athletics").ToString();
+        barteringValue.text = character.getSkillRating("Bartering").ToString();
+        healingValue.text = character.getSkillRating("Healing").ToString();
+        lockpickingValue.text = character.getSkillRating("Lockpicking").ToString();
+        meleeValue.text = character.getSkillRating("Melee").ToString();
+        pickpocketValue.text = character.getSkillRating("Pickpocket").ToString();
+        projectilesValue.text = character.getSkillRating("Projectiles").ToString();
+        ridingValue.text = character.getSkillRating("Riding").ToString();
+        shieldValue.text = character.getSkillRating("Shield").ToString();
+        stealthValue.text = character.getSkillRating("Stealth").ToString();
+        survivalValue.text = character.getSkillRating("Survival").ToString();
+        trapsValue.text = character.getSkillRating("Traps").ToString();
+        skillPointsValue.text = skillPoints.ToString();
     }
 }

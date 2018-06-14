@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1680
     height: 918
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 117
+  controlID: 34
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,8 +64,8 @@ MonoBehaviour:
     y: 0
     width: 396
     height: 918
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -90,8 +90,8 @@ MonoBehaviour:
     y: 0
     width: 257
     height: 643
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -207,10 +207,10 @@ MonoBehaviour:
     y: 0
     width: 1284
     height: 918
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 78
+  controlID: 35
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,10 +231,10 @@ MonoBehaviour:
     y: 0
     width: 1284
     height: 643
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 79
+  controlID: 36
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -354,19 +354,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/stoneageartisans/Prefabs
+    - Assets/stoneageartisans/Scripts
   m_ViewMode: 1
   m_StartGridSize: 58
   m_LastFolders:
-  - Assets/stoneageartisans/Prefabs
+  - Assets/stoneageartisans/Scripts
   m_LastFoldersGridSize: 58
   m_LastProjectPath: E:\projects\unity\Turn-Based-World
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fe2a0000
-    m_LastClickedID: 11006
+    m_SelectedIDs: 9c2a0000
+    m_LastClickedID: 10908
     m_ExpandedIDs: 000000003c290000222b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -513,7 +513,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 828af9ff428bf9ff568cf9ff94a0f9ff14a1f9ff28a2f9ffb66afaff366bfaff4a6cfaffd445fbff5846fbff6c47fbff1cbffbff22bffbff32cafdff42eeffff48eefffff0fbffff00000000ac2c0000bc2c00002edb0000a2db000022de000084de0000bc090100200d01008a0d010046500100b0500100
+    m_ExpandedIDs: 5c74fdffe274fdfffc75fdff8e63ffff1264ffff2665ffffa0f9ffff7efaffffe2fbffff00000000f02c0000002d00007243000098430000a2430000164400006e440000ec4400000645000072450000bc4500004c460000aa460000b04600005a4700006847000074470000944700001e4800002c480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,9 +568,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 515.59595, y: 301.76608, z: -1128}
+    m_Target: {x: 511.46597, y: 300.73358, z: -1128}
     speed: 2
-    m_Value: {x: 515.59595, y: 301.76608, z: -1128}
+    m_Value: {x: 511.46597, y: 300.73358, z: -1128}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -602,9 +602,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0, y: 0, z: -0, w: -1}
   m_Size:
-    m_Target: 657.716
+    m_Target: 572.86005
     speed: 2
-    m_Value: 657.716
+    m_Value: 572.86005
   m_Ortho:
     m_Target: 1
     speed: 2

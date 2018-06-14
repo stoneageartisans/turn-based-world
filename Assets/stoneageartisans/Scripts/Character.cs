@@ -129,7 +129,7 @@ public class Character
             }
         }
 
-        return ((int) Math.Round(((float) statTotal / 3.0f), 0, MidpointRounding.AwayFromZero) + skill.getPoints());
+        return ((int) Math.Round(((float) statTotal / 3.0f), 0, MidpointRounding.AwayFromZero) + skill.getPoints() - 4);
     }
 
     public PrimaryStat getStat(Constants.StatType statType)
