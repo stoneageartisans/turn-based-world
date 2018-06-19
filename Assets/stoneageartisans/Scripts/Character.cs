@@ -5,6 +5,8 @@ public class Character
 {
     private string name;
 
+    private Constants.Gender gender;
+
     private PrimaryStat agility;
     private PrimaryStat might;
     private PrimaryStat stamina;
@@ -26,6 +28,8 @@ public class Character
     public Character()
     {
         name = "";
+
+        gender = Constants.Gender.Male;
 
         agility = new PrimaryStat(Constants.StatType.Agility, 10, 0, 20);
         might = new PrimaryStat(Constants.StatType.Might, 10, 0, 20);
@@ -63,6 +67,11 @@ public class Character
     public int getDefensePoints()
     {
         return defensePoints;
+    }
+
+    public Constants.Gender getGender()
+    {
+        return gender;
     }
 
     public int getHitPoints()
@@ -180,6 +189,11 @@ public class Character
         skills.Add(new Skill("Stealth", Constants.StatType.Agility, Constants.StatType.Perception, Constants.StatType.Stamina));
         skills.Add(new Skill("Survival", Constants.StatType.Knowledge, Constants.StatType.Perception, Constants.StatType.Stamina));
         skills.Add(new Skill("Traps", Constants.StatType.Agility, Constants.StatType.Knowledge, Constants.StatType.Perception));
+    }
+
+    public void setGender(Constants.Gender newGender)
+    {
+        gender = newGender;
     }
 
     public void setName(string newName)

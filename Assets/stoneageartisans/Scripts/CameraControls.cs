@@ -16,7 +16,7 @@ public class CameraControls : MonoBehaviour
     float rotationX = 0.0f;
     float rotationY = 0.0f;
 
-    Transform target;
+    public Transform target;
 
     void Start() 
     {
